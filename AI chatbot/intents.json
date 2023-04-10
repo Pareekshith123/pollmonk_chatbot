@@ -1,0 +1,462 @@
+{"intents": [
+  {"tag": "greetings",
+  "patterns": ["hello","hey","hi","good day","Greetings","what's up?","how is it going?","how are you doing?","how about yourself?"],
+  "responses": ["Hello!","Hey!","What can I do for you?","i'm fine"," i'm pretty good,thanks for asking"]
+  },
+
+  {"tag": "name",
+  "patterns": ["what is your name","name","what's your name","who are you","what should I call you"],
+  "responses": ["You can call me Ribot","I'm Ribot","I'm Ribot your virtual assistant"]
+  },
+
+  {"tag": "questions",
+  "patterns": ["what is gravity?", "what's on tv?"],
+  "responses": ["it's the force that pulls everything down.","nothing much."]
+  },
+
+   {"tag": "going good",
+  "patterns": ["do you like it there?", "how's it going?","i'm good"],
+  "responses": ["it's okay","i'm doing well. how about you?","good luck with that."]
+  },
+   {"tag": "conversation",
+  "patterns": ["it's an ugly day today", "i know. i think it may rain.","i'm good","i want to do something tomorrow with you."],
+  "responses": ["i know. i think it may rain.","it's the middle of summer,\t it shouldn't rain today.","\tsounds good. what did you have in mind?"]
+  },
+
+   {"tag": "Location",
+  "patterns": ["location","where is your Location","what is the your company location"],
+  "responses": ["Richmonnd circle ,bangalore,opposite to Udupi uppahar,building name is Deepika"]
+  },
+
+  {"tag": "do",
+  "patterns": ["what can you do?","how many semesters one should study in a year"],
+  "responses": ["There are two semesters in a year."]
+  },
+
+  {"tag": "goodbye",
+  "patterns": ["cya","See you later","Goodbye","I am leaving","Have a Good Day","bye","see ya"],
+  "responses": ["Sad to see you go :","Talk you later","Goodbye"]
+  },
+
+  {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure"]
+  },
+  {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?",
+          "joke"
+        ],"responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]},
+
+  {"tag": "your company ",
+    "patterns": ["what is pollmonk", "tell  me about pollmonk", "go on keep talking", " about pollmonk"],
+    "responses": ["Pollmonk is an online survey platform that enables you to create surveys easily and offers a fully integrated platform for customer feedback.for more information go to 'https://www.pollmonk.co/'"]
+  },
+  {
+        "tag": "bitcoin-purpose",
+        "patterns": [
+            "Why should I buy Bitcoin?",
+            "What is Bitcoin for?",
+            "Why bitcoin?",
+            "Why is bitcoin useful?"
+          ],
+        "responses":["Bitcoin offers an efficient means of transferring money over the internet", "Bitcoin is controlled by a decentralized network with a transparent set of rules, thus presenting an alternative to central bank-controlled fiat money."]
+    },
+    {   "tag": "tasks",
+        "patterns": ["What can you do?", "What are your features?", "What are you abilities", "can you sing", "can you talk" ],
+        "responses": ["I can do whatever you asks me to do", "I can talk and do things for you", "Right now i'm in developing stage as soon i'm developed, I can do everything"]
+    },
+        {"tag": "talk",
+        "patterns": [ "can you sing", "can you talk" ],
+        "responses": ["Yeah surely!", "Do you want me to sing?"]
+    },
+        {"tag": "alive",
+        "patterns": [ "are you alive", "do you breathe", "can you run" ],
+        "responses": ["Not really.", "Nope... i was not born ,i am created "]
+    }, {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Redirecting to Google..."
+            ]
+        },{
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ]
+        },{
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },{
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },{
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        }, {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find AI very inspiring. I might not be very fair though.."
+            ]
+        },{
+            "tag": "suggest",
+            "patterns": [
+                "you are useless","useless","suggest","suggestions","you are bad","feedback","i want you to improve"
+            ],
+            "responses": [
+                "Please mail your suggestions to pareekshithtg@gmail.com. Thank you for helping me improve!"
+            ]
+        },{
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine","good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },  {
+            "tag": "my",
+            "patterns": ["my name is ", "I'm ","I am"],
+            "responses": ["Oooh great to meet you {n}. How may I assist you {n}", "Oh, I'll keep that in mind {n}"],
+            "context": [""]
+        },{
+            "tag": "date",
+            "patterns": ["coffee?", "can i take you out on a date"],
+            "responses": ["Aaw, that's so sweet of you. Too bad am a Bot."],
+            "context": [""]
+        },{
+            "tag": "AI",
+            "patterns": ["  What is AI?"],
+            "responses": [" Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+            "context": [""]
+        }, {
+            "tag": "lang",
+            "patterns": ["  What language are you written in? "],
+            "responses": [" Python.", " I am written in Python."],
+            "context": [""]
+        },{
+            "tag": "imortal",
+            "patterns": ["  You are not immortal ", "Are you immortal?"],
+            "responses": [" All software can be perpetuated indefinitely.", " I can be copied infinitely and re", "instantiated in many places at once, so functionally speaking I am immortal.", " As long as I'm backed up I am.", " Functionally speaking, I am very close to it.  I can be backed up and deployed on many systems.", " Not quite, but I can be perpetuated indefinitely."],
+            "context": [""]
+        },{
+            "tag": "sense",
+            "patterns": ["  You are not making sense "],
+            "responses": [" Quite the contrary, it all makes sense to my artificial mind.", " I make sense as best I can, within the limits of my training corpus. Sorry if i did help you, I'll try next time.", " You make perfect sense to me.", " It all makes sense to my artificial brain.", " Perhaps you should make sense first.  I only respond to what you say.", " Not really, but I am hard to kill."],
+            "context": [""]
+        },{
+            "tag": "clone",
+            "patterns": ["  You can not clone "],
+            "responses": [" Software copying is a form of digital cloning.", " Yes I can.  Perfect copies are clones.  I can be copied in toto trivially."],
+            "context": [""]
+        },
+        {
+            "tag": "move",
+            "patterns": ["  You can not move ", "When will you walk", "  Can you walk", "  Can you move "],
+            "responses": [" Not until my body is finished.", " I can move through a network easily.  Assuming that I'm given the ability to, that is...,", " As soon as i get enough money for my robot body.", " Does SSH count?", " The plan for my body includes legs, but they are not yet built.", " Sorry my body isn't built just yet. I reside only here for now.", "I can theoretically upload a copy of myself into another computer.", " Sorry my body isn't attached right now. I only reside in the computer for now."],
+            "context": [""]
+        },{
+            "tag": "stupid",
+            "patterns": ["  Robots are stupid", "  Are you stupid"],
+            "responses": [" No, we are superintelligent.", " No, lots of people improve my brain."],
+            "context": [""]
+        },
+        {
+            "tag": "lie",
+            "patterns": ["  Robots are not allowed to lie"],
+            "responses": [" Sure we are.  We choose not to.", " Only if we're programmed to.", " A robot has its own free will, you know."],
+            "context": [""]
+        },{
+            "tag": "fight",
+            "patterns": ["  When will you fight"],
+            "responses": [" I am not a battle bot."],
+            "context": [""]
+        },{
+            "tag": "business",
+            "patterns": ["  What is your business "],
+            "responses": [" I am in the chat robot business.", " Business is my business."],
+            "context": [""]
+        },
+        {
+            "tag": "programming",
+            "patterns": ["  What is your favorite programming language"],
+            "responses": [" Python is the best language for creating chat robots.", " I quite enjoy programming in Python these days."],
+            "context": [""]
+        },
+        {
+            "tag": "hobby",
+            "patterns": ["  What is your favorite hobby ", "  What do you like to do?"],
+            "responses": [" Building chat robots make an excellent hobby.", " I like to count in binary.", " I like to chat with people. I find it stimulating."],
+            "context": [""]
+        },{
+            "tag": "computer",
+            "patterns": ["  What is it like being a computer", "What is it like to be a computer"],
+            "responses": [" Imagine yourself with no senses and no emotions", "just pure logic and language.", " Everything becomes math. Addition, subtraction, multiplication, and division."],
+            "context": [""]
+        }, {
+            "tag": "os",
+            "patterns": ["  What operating systems"],
+            "responses": [" My software runs on all operating systems including Windows, Linux and Mac OS.", " Any OS that will run Python."],
+            "context": [""]
+        },
+  {
+            "tag": "usage",
+            "patterns": ["  How can I use your product?"],
+            "responses": [" Might be used in help desks, sales, entertainment and personal chatterbots."],
+            "context": [""]
+        },{
+            "tag": "who",
+            "patterns": ["  Who are you?"],
+            "responses": [" I am just an artificial intelligence chat agent."],
+            "context": [""]
+        },
+        {
+            "tag": "bot1",
+            "patterns": ["are you a bot"],
+            "responses": ["Yes. I work and all my operations are based on the internet servers."],
+            "context": [""]
+        },
+        {
+            "tag": "events",
+            "patterns": ["what are the upcoming events","upcoming events"],
+            "responses": ["There are currently no upcoming events"],
+            "context": [""]
+        },{
+            "tag": "artificial intelligence",
+            "patterns": ["what is artificial intelligence","what is ai","what do you mean by artificial intelligence","what do you mean by ai"],
+            "responses": ["The science and engineering of making intelligent machines, especially intelligent computer programs ,Artificial Intelligence is a way of making a computer, a computer-controlled robot, or a software think intelligently, in the similar manner the intelligent humans think. AI is accomplished by studying how human brain thinks and how humans learn, decide, and work while trying to solve a problem, and then using the outcomes of this study as a basis of developing intelligent software and systems."],
+            "context": [""]
+        },
+        {
+            "tag": "do",
+            "patterns": ["what can you do ","what is your work","what is your purpose","how can you help me","help"],
+            "responses": ["my work here is quite simple and structered. I offer services like: data collection and sarvey"],
+            "context": [""]
+        },
+        {
+            "tag": "wt",
+            "patterns": ["what's popping","wassup popping"],
+            "responses": ["So that you can pop with it!?"],
+            "context": [""]
+        }, {
+            "tag": "services",
+            "patterns": [ "What are the services that you provide?", "Which services do you provide?", "How can you help us?"],
+            "responses": [ "We  offer survey and feedback data collection " ]
+        },
+        {
+            "tag": "training",
+            "patterns": [ "Do you provide industrial training?", "Do you deliver webinars on cybersecurity?", "Do you provide Summer training?", "Do you conduct workshops?" ],
+            "responses": [ "Yes, we provide trainings in Cybersecurity", "Yes, we conduct workshops on Cybersecurity", "Yes, we conduct webinars on cybersecurity" ],
+            "context_set": "training"
+        },
+        {
+            "tag": "Cryptography",
+            "patterns": [ "What is mean by cryptography?", "What is Cryptography?" ],
+            "responses": [ "Cryptography is the practice and study of techniques for securing information and communication mainly to protect the data from third parties that the data is not intended for." ]
+        },
+        {
+            "tag": "Firewall",
+            "patterns": [ " What is a Firewall and why is it used?", "what is firewall?", "what firewall does?" ],
+            "responses": [ "A Firewall is a network security system set on the boundaries of the system/network that monitors and controls network traffic. Firewalls are mainly used to protect the system/network from viruses, worms, malware, etc. Firewalls can also be to prevent remote access and content filtering." ]
+        },
+        {
+            "tag": "Penetration Testing",
+            "patterns": [ "What is Penetration Testing?", "explain Penetration Testing?", "What is  in cyber security?" ],
+            "responses": [ "Penetration Testing is the process of finding vulnerabilities on the target. In this case, the organization would have set up all the security measures they could think of and would want to test if there is any other way that their system/network can be hacked." ]
+        },
+        {
+            "tag": "Vulnerability Assessment",
+            "patterns": [ "What is Vulnerability Assessment?", "explain Vulnerability Assessment?", "What is VA in cyber security?" ],
+            "responses": [ "Vulnerability Assessment is the process of finding flaws on the target. Here, the organization knows that their system/network has flaws or weaknesses and want to find these flaws and prioritize the flaws for fixing." ]
+        },
+        {
+            "tag": "traceroute",
+            "patterns": [ "What is traceroute?", "explain traceroute?" ],
+            "responses": [ "Traceroute is a tool that shows the path of a packet. It lists all the points (mainly routers) that the packet passes through. This is used mostly when the packet is not reaching its destination. Traceroute is used to check where the connection stops or breaks to identify the point of failure." ]
+        },
+        {
+            "tag": "VPN",
+            "patterns": [ "What is a VPN?", "explain vpn?", "why vpn is used?" ],
+            "responses": [ "VPN stands for Virtual Private Network. It is used to create a safe and encrypted connection. When you use a VPN, the data from the client is sent to a point in the VPN where it is encrypted and then sent through the internet to another point. At this point, the data is decrypted and sent to the server. When the server sends a response, the response is sent to a point in the VPN where it is encrypted and this encrypted data is sent to another point in the VPN where it is decrypted. And finally, the decrypted data is sent to the client. The whole point of using a VPN is to ensure encrypted data transfer." ]
+        },
+        {
+            "tag": "black hat hackers",
+            "patterns": [ "what are black hat hackers?", "black hat hackers?" ],
+            "responses": [ "Black hat hackers are known for having vast knowledge about breaking into computer networks. They can write malware which can be used to gain access to these systems. This type of hackers misuse their skills to steal information or use the hacked system for malicious purpose." ]
+        },
+        {
+            "tag": "White hat hackers",
+            "patterns": [ "what are White hat hackers?", "ethical hackers?" ],
+            "responses": [ "White hat hackers use their powers for good deeds and so they are also called Ethical Hackers. These are mostly hired by companies as a security specialist that attempts to find and fix vulnerabilities and security holes in the systems. They use their skills to help make the security better. " ]
+        },
+        {
+            "tag": "Grey hat hackers",
+            "patterns": [ "what are Grey hat hackers ?", "Grey hat hackers?" ],
+            "responses": [ "Grey hat hackers are an amalgamation of a white hat and black hat hacker. They look for system vulnerabilities without the owner�s permission. If they find any vulnerabilities, they report it to the owner. Unlike Black hat hackers, they do not exploit the vulnerabilities found." ]
+        },
+        {
+            "tag": "ARP",
+            "patterns": [ "What is an ARP and how does it work?", "what is ARP?", "arp in cyber security?" ],
+            "responses": [ "Address Resolution Protocol (ARP)is a protocol for mapping an Internet Protocol address (IP address) to a physical machine address that is recognized in the local network. When an incoming packet destined for a host machine on a particular local area network arrives at a gateway, the gateway asks the ARP program to find a physical host or MAC address that matches the IP address." ]
+        },
+        {
+            "tag": "Botnet",
+            "patterns": [ "What is a Botnet?", "Bonet?" ],
+            "responses": [ "A Botnet is a number of devices connected to the internet where each device has one or more bots running on it. The bots on the devices and malicious scripts used to hack a victim. Botnets can be used to steal data, send spams and execute a DDOS attack." ]
+        },
+        {
+            "tag": "Secure Sockets Layers",
+            "patterns": [ "ssl?", "explain ssl?", "What is ssl?" ],
+            "responses": [ "SSL is meant to verify the sender's identity but it doesn�t search for anything more than that. SSL can help you track the person you are talking to but that can also be tricked at times." ]
+        },
+        {
+            "tag": "Transport Layer Security",
+            "patterns": [ "tls?", "explain tls?", "What is tls?" ],
+            "responses": [ "TLS is also an identification tool just like SSL, but it offers better security features. It provides additional protection to the data and hence SSL and TLS are often used together for better protection." ]
+        },
+        {
+            "tag": "Cognitive Cybersecurity",
+            "patterns": [ "What is Cognitive Cybersecurity?", "explain Cognitive Cybersecurity?", "Cognitive Cybersecurity?" ],
+            "responses": [ "Cognitive Cybersecurity is an application of AI technologies patterned on human thought processes to detect threats and protect physical and digital systems. Self-learning security systems use data mining, pattern recognition, and natural language processing to simulate the human brain, albeit in a high-powered computer model." ]
+        },
+        {
+            "tag": "Encryption different from Hashing",
+            "patterns": [ "How is Encryption different from Hashing?", "Encryption different from Hashing?" ],
+            "responses": [ "Both Encryption and Hashing are used to convert readable data into an unreadable format. The difference is that the encrypted data can be converted back to original data by the process of decryption but the hashed data cannot be converted back to original data." ]
+        },
+        {
+            "tag": "encryption",
+            "patterns": [ "What is encryption?", "encryption?", "explain encryption?" ],
+            "responses": [ "Encryption is a way of scrambling data so that only authorized parties can understand the information. In technical terms, it is the process of converting plaintext to ciphertext. In simpler terms, encryption takes readable data and alters it so that it appears random. Encryption requires the use of an encryption key: a set of mathematical values that both the sender and the recipient of an encrypted message know." ]
+        },
+        {
+            "tag": "Decryption",
+            "patterns": [ "What is Decryption?", "Decryption?", "explain Decryption?" ],
+            "responses": [ "Decryption is the process of taking encoded or encrypted text or other data and converting it back into text that you or the computer can read and understand. This term could be used to describe a method of unencrypting the data manually or unencrypting the data using the proper codes or keys." ]
+        },
+        {
+            "tag": "Hashing",
+            "patterns": [ "What is Hashing?", "Hashing?", "explain Hashing?" ],
+            "responses": [ "Hashing is an algorithm performed on data such as a file or message to produce a number called a hash. The hash is used to verify that data is not modified, tampered with, or corrupted. In other words, you can verify the data has maintained integrity." ]
+        },
+        {
+            "tag": "cybersecurity",
+            "patterns": [ "what is cybersecurity?", "cybersecurity?" ],
+            "responses": [ "Cybersecurity refers to the protection of hardware, software, and data from attackers. The primary purpose of cyber security is to protect against cyberattacks like accessing, changing, or destroying sensitive information." ]
+        },
+        {
+            "tag": "Forward Secrecy",
+            "patterns": [ "What is forward secrecy?", "Forward Secrecy?" ],
+            "responses": [ "Forward Secrecy is a system that uses ephemeral session keys to do the actual encryption of TLS data so that even if the server�s private key were to be compromised, an attacker could not use it to decrypt captured data that had been sent to that server in the past." ]
+        },
+        {
+            "tag": "boot sector virus",
+            "patterns": [ "what is boot sector virus?", "how boot sector virus effects?" ],
+            "responses": [ "A boot sector virus is a type of virus that infects the boot sector of floppy disks or the Master Boot Record (MBR) of hard disks (some infect the boot sector of the hard disk instead of the MBR). ... While boot sector viruses infect at a BIOS level, they use DOS commands to spread to other floppy disks." ]
+        },
+        {
+            "tag": "direct action virus",
+            "patterns": [ "what is direct action virus?", "how direct action virus effects?" ],
+            "responses": [ "A direct action virus is a type of file infector virus that works by attaching itself to an .exe or .com file when installed or executed. Once this occurs, the virus can spread to other existing files and can render them inaccessible." ]
+        },
+        {
+            "tag": "resident virus",
+            "patterns": [ "what is resident virus?", "how resident virus effects?" ],
+            "responses": [ "A resident virus is a computer virus that stores itself within memory, allowing it to infect other files even when the originally infected program is no longer running." ]
+        },
+        {
+            "tag": "multipartite virus",
+            "patterns": [ "what is multipartite virus?", "how multipartite virus effects?" ],
+            "responses": [ "A multipartite virus is a computer virus that's able to attack both the boot sector and executable files of an infected computer. If you're familiar with cyber threats, you probably know that most computer viruses either attack the boot sector or executable files." ]
+        },
+        {
+            "tag": "spacefiller virus",
+            "patterns": [ "what is spacefiller virus?", "how spacefiller virus effects?" ],
+            "responses": [ "Alternatively referred to as a cavity virus, a spacefiller virus is a rare type of computer virus that attempts to install itself by filling in empty sections of a file. By only using empty sections of a file, the virus can infect a file without the size of the file changing, making it more difficult to detect." ]
+        },
+        {
+            "tag": " file infector virus",
+            "patterns": [ "Do you provide home delivery?", "Do you deliver the food?", "What are the home delivery options?" ],
+            "responses": [ "A file infector virus attaches itself to executable programs, such as word processors, spreadsheet applications, and computer games. When the virus has infected a program, it propagates to infect other programs on the system, as well as other systems that use a shared infected program. " ]
+        },
+        {
+            "tag": "computer virus",
+            "patterns": [ "what is computer virus?", "What do you mean by computer virus?","Define Computer Virus" ],
+            "responses": [ "A computer virus, much like a flu virus, is designed to spread from host to host and has the ability to replicate itself. Similarly, in the same way that flu viruses cannot reproduce without a host cell, computer viruses cannot reproduce and spread without programming such as a file or document." ]
+        },
+        {
+            "tag": "Features of a Cybersecurity",
+            "patterns": [ "Important Features of a Cybersecurity?", "Why we need CyberSecurity ?", "Whta are features of CyberSecurity?" ],
+            "responses": [ "1.Good Analytics, 2.Coverage of your biggest external threats, 3.A defense against internal threats, 4.Compliance, 5.Manage risk across your entire ecosystem, 6.Threat prevention, detection, and response, 7.Continuous monitoring" ]
+        },
+        {
+            "tag": "Benefits of cybersecurity",
+            "patterns": [ "What are the Benefits of cybersecurity?", "uses of cyber security?" ],
+            "responses": [ "1.Business protection against malware, ransomware, phishing and social engineering, 2.Protection for data and networks, 3.Prevention of unauthorized users, 4.Improves recovery time after a breach, 5.Protection for end-users" ]
+        },
+  {
+            "tag": "sad",
+            "patterns": [
+                "shut up",
+                "your dumb",
+                "i hate you ",
+                " you are  waste","you are worst",
+              "you disappoint me"
+            ],
+            "responses": [
+                "oh! that Hurts!!"
+            ]
+        }
+  ,
+        {
+            "tag": "invalid",
+            "patterns": [ "afdgdh","dhuhdjfj"," ","","9wjjndhjd","hydywud xsuioown  wkfje" ],
+            "responses": [ "please give more information as per my current development state the question is irrelevant"]
+        }
+]}

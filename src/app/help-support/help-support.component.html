@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pollmonk demo for chatbot</title>
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+        <img style="height: 60px;" src="assets/sunplus-logo.png" alt="">
+        
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        
+      </section>
+      <section class="services">
+        <h1 style="color: rgb(24, 233, 17);">Welcome to my website</h1>
+       <video width="1600"   height="600" loop autoplay muted controls>
+          <source src="assets/sunPlus.mp4" type="video/mp4">
+          
+          Your browser does not support the video tag.
+        </video> 
+        <h2>Our Services</h2>
+        <ul>
+          <li>Survey</li>
+          <li>Data collection</li>
+          <li>SEO</li>
+          <li>Social Media Marketing</li>
+        </ul>
+      </section>
+      <section class="about">
+        <h2>About Us</h2>
+        <p>The universal survey application provides an online platform to create surveys, automate response collection and report generation for myriad of domains. An intelligent survey mechanism integrated with high-end features of Artificial Intelligence, Advanced Analytics and Machine Learning that facilitates creation of quick and accurate surveys. It is one of the most advanced comprehensive feedback tools that allow users to extract more out of their surveys, empowering quick decisions.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 @copywrites by Pareekshith</p>
+    </footer>
+  </body>
+</html>
+
+
+<div id="helpdesk">
+    <button id="helpdesk-popup-button" (click)="openSupportPopup()">
+      Vegus
+      <img style ="height:60px;" src="/assets/chat.png">
+    </button>
+    <div id="helpdesk-popup" [style.display]="isOpen ? 'block' : 'none'">
+      <div id="helpdesk-popup-header">
+       Pollmonk  helpdesk
+        <button id="helpdesk-popup-close-button" (click)="openSupportPopup()">
+       Shut_Up
+        </button>
+      </div>
+      <div id="helpdesk-popup-body">
+        <div class="messages" #scrollMe>
+          <div *ngFor="let message of messages" class="message">
+            <div [class]="message.type">
+              {{ message.message }}
+            </div>
+          </div>
+          <div
+            *ngIf="loading"
+            class="message"
+            style="width: 100%; display: block"
+          >
+            <div [class]="'client'">...</div>
+          </div>
+        </div>
+      </div>
+      <form id="helpdesk-popup-footer" [formGroup]="chatForm">
+        <input
+          formControlName="message"
+          type="text"
+          id="helpdesk-popup-input"
+          placeholder="Type your message here..."
+        />
+        <button
+          id="helpdesk-popup-submit-button"
+          [disabled]="!chatForm.valid"
+          (click)="sendMessage()"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+  
